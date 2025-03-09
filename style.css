@@ -1,0 +1,49 @@
+/* 按钮默认样式 */
+.choice-btn {
+    background-color: #444;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* 鼠标悬停时稍微放大 */
+.choice-btn:hover {
+    transform: scale(1.1);
+}
+
+/* 让否定选项逐渐缩小 */
+@keyframes shrink {
+    0% { transform: scale(1); }
+    100% { transform: scale(0.1); opacity: 0; }
+}
+
+/* 让肯定选项变大 */
+@keyframes grow {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.5); }
+}
+
+/* 闪烁效果 */
+@keyframes flicker {
+    0% { opacity: 1; }
+    50% { opacity: 0.2; }
+    100% { opacity: 1; }
+}
+.flicker {
+    animation: flicker 0.3s infinite;
+}
+
+/* 文字闪烁 */
+@keyframes flicker {
+    0% { opacity: 1; }
+    50% { opacity: 0.2; }
+    100% { opacity: 1; }
+}
+.flicker {
+    animation: flicker 0.3s infinite;
+}
